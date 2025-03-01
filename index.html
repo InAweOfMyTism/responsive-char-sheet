@@ -12,18 +12,59 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="main-content">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores nostrum, voluptatem culpa repellendus molestiae! Modi, autem aspernatur alias tenetur facere suscipit ratione ut deleniti dicta, laborum, natus fugit. Ab quisquam in id commodi officia natus rerum delectus sapiente praesentium, blanditiis, quis quia dolorem?</p>
-        <img src="https://picsum.photos/500/300" alt="">
-        <button>I am a button</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt necessitatibus hic et odio libero voluptatum sunt nobis quas fuga! Consequuntur ipsum explicabo cumque neque labore odit magni, inventore, consequatur fuga eaque adipisci.</p>
+    <div class="char-sheet-menu"></div>
+    <div class="char-info">
+        <div class="identity card">
+            <div class="name">
+                <h2>Character Name </h2>
+                <input type="text" name="char-name" id="char-name">
+            </div>
+            <div class="bio">
+
+                <h4 class="display">Youth, long-legged, Humanoid</h4>
+
+                <label for="char-age">Age:</label>
+                <select name="char-age" id="char-age">
+                    <option value="youth">Youth</option>
+                    <option value="adult">Adult</option>
+                    <option value="elder">Elder</option>
+                </select>
+
+                <label for="char-size">Size:</label>
+                <select name="char-size" id="char-size">
+                    <option value="small">Short-Legged</option>
+                    <option value="medium">Long-Legged</option>
+                    <option value="large">Powerful Build</option>
+                </select>
+
+                <label for="char-type">Age:</label>
+                <select name="char-type" id="char-type">
+                    <option value="humanoid">Humanoid</option>
+                    <option value="plane-touched">Plane-Touched</option>
+                    <option value="chimera">Chimera</option>
+                    <option value="construct">Construct</option>
+                    <option value="undead">Undead</option>
+                </select>
+
+            </div>
+            <div class="level">
+                <div class="primary-lvl">
+                    <h2>10</h2>
+                    <input type="number" name="char-p-lvl" id="char-p-lvl">
+                </div>
+                <div class="challenge-lvl">
+                    <h2>5</h2>
+                    <input type="number" name="char-p-lvl" id="char-p-lvl">
+                </div>
+            </div>
+        </div>
+        <div class="health card">
+
+        </div>
+        <div class="skill"></div>
     </div>
+    <div class="char-actions"></div>
+    <div class="char-inventory"></div>
     <script src="script.js"></script>
 </body>
 </html>
