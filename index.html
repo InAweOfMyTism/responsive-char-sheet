@@ -12,8 +12,8 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="char-sheet-menu"></div>
-    <div class="char-info">
+    <div class="sheet-menu"></div>
+    <div class="info">
         <div class="identity card">
             <div class="name">
                 <h2>Character Name </h2>
@@ -46,6 +46,8 @@
                     <option value="undead">Undead</option>
                 </select>
 
+                <textarea name="char-desc" id="char-desc" cols="30" rows="10"></textarea>
+
             </div>
             <div class="level">
                 <div class="primary-lvl">
@@ -59,12 +61,61 @@
             </div>
         </div>
         <div class="health card">
-
+            <div class="scores">
+                <div class="armor-class">
+                    <h2>19</h2>
+                    <input type="number" name="char-AC" id="char-AC">
+                </div>
+                <div class="hit-points">
+                    <h2>100</h2>
+                    <input type="number" name="char-hp" id="char-hp">
+                </div>
+                <div class="temp-hp">
+                    <h2>25</h2>
+                    <input type="number" name="char-tp" id="char-tp">
+                </div>
+            </div>
+            <div class="wounds">
+                <div class="status">
+                    <h2 class="message">All Good</h2>
+                    <h2 class="condition">Healthy</h2>
+                    <div class="health-display">
+                        <!-- Add up to 10 little heart icons here that change to a different icon depending on what wound is sustained -->
+                    </div>
+                </div>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo culpa officiis nemo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis nemo quod?</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ex dolore harum optio repudiandae tempore?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi quam itaque amet. Soluta!</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, animi voluptatem.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ut fuga ab.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam, repudiandae aliquid exercitationem quaerat ex.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sed rerum accusantium magni.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ab ratione in.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime porro quis.</li>
+                </ul>
+            </div>
         </div>
         <div class="skill"></div>
     </div>
-    <div class="char-actions"></div>
-    <div class="char-inventory"></div>
+    <div class="actions">
+        <div class="main-action card">
+            <div class="tracker"></div>
+            <div class="action-list"></div>
+        </div>
+        <div class="reaction card">
+            <div class="tracker"></div>
+            <div class="action-list"></div>
+        </div>
+        <div class="passive card">
+            <div class="action-list"></div>
+        </div>
+    </div>
+    <div class="inventory">
+        <div class="equipment card"></div>
+        <div class="loot card"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
